@@ -1,4 +1,4 @@
-# laravel-blade-events
+# laravel-blade-events [English](https://github.com/slexx1234/laravel-blade-events/blob/master/README.md)
 
 ## Использование
 
@@ -97,7 +97,7 @@ EventManager::listen('unique-event-name', function($event) {
 
 ### Слушатели событий
 
-В качестве слушателя события можно укпзать имя функции:
+В качестве слушателя события можно указать имя функции:
 
 ```
 EventManager::listen('some-event', 'someEventListener');
@@ -119,7 +119,7 @@ EventManager::listen('some-event', ['\Foo\Bar\SomeEventListener', 'handle']);
 EventManager::listen('package-one::some-event|package-two::some-event', '\Foo\Bar\SomeEventListener@handle');
 ```
 
-Или передав имена в качестве массива:
+Или передав список имён массивом:
 
 ```
 EventManager::listen(['package-one::some-event', 'package-two::some-event'], '\Foo\Bar\SomeEventListener@handle');
